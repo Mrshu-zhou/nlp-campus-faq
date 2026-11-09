@@ -1,0 +1,261 @@
+{
+  "stats": {
+    "n": 120,
+    "top1_error": 61,
+    "same_intent": 45,
+    "cross_intent": 16,
+    "gold_in_top3": 34
+  },
+  "cases": [
+    {
+      "query": "选课入口在哪里",
+      "gold_intent": "选课与教务",
+      "gold_question": "怎么在教务系统里选课？",
+      "pred_question": "本学期的选课什么时候开始？",
+      "pred_intent": "选课与教务",
+      "score": 0.9656473994255066,
+      "gold_rank": 2,
+      "failure_type": "同意图错条目"
+    },
+    {
+      "query": "怎么取消已经选上的课",
+      "gold_intent": "选课与教务",
+      "gold_question": "选课后还能退课吗？",
+      "pred_question": "怎么在教务系统里选课？",
+      "pred_intent": "选课与教务",
+      "score": 0.9490100145339966,
+      "gold_rank": 2,
+      "failure_type": "同意图错条目"
+    },
+    {
+      "query": "学分构成是怎样的",
+      "gold_intent": "选课与教务",
+      "gold_question": "在哪里查专业的培养方案和学分要求？",
+      "pred_question": "本学期的选课什么时候开始？",
+      "pred_intent": "选课与教务",
+      "score": 0.9358016848564148,
+      "gold_rank": 2,
+      "failure_type": "同意图错条目"
+    },
+    {
+      "query": "在哪里查我的培养计划",
+      "gold_intent": "选课与教务",
+      "gold_question": "在哪里查专业的培养方案和学分要求？",
+      "pred_question": "课程不及格怎么补考或重修？",
+      "pred_intent": "选课与教务",
+      "score": 0.8625187277793884,
+      "gold_rank": 3,
+      "failure_type": "同意图错条目"
+    },
+    {
+      "query": "不及格能补考吗",
+      "gold_intent": "选课与教务",
+      "gold_question": "课程不及格怎么补考或重修？",
+      "pred_question": "生病不能参加考试怎么申请缓考？",
+      "pred_intent": "考试与成绩",
+      "score": 0.884436309337616,
+      "gold_rank": 7,
+      "failure_type": "跨意图"
+    },
+    {
+      "query": "课程重修什么时候申请",
+      "gold_intent": "选课与教务",
+      "gold_question": "课程不及格怎么补考或重修？",
+      "pred_question": "怎么申请转专业或辅修？",
+      "pred_intent": "选课与教务",
+      "score": 0.9694251418113708,
+      "gold_rank": 3,
+      "failure_type": "同意图错条目"
+    },
+    {
+      "query": "转专业申请时间",
+      "gold_intent": "选课与教务",
+      "gold_question": "怎么申请转专业或辅修？",
+      "pred_question": "课程不及格怎么补考或重修？",
+      "pred_intent": "选课与教务",
+      "score": 0.8828378915786743,
+      "gold_rank": 2,
+      "failure_type": "同意图错条目"
+    },
+    {
+      "query": "可以修双学位吗",
+      "gold_intent": "选课与教务",
+      "gold_question": "怎么申请转专业或辅修？",
+      "pred_question": "课程不及格怎么补考或重修？",
+      "pred_intent": "选课与教务",
+      "score": 0.5902060866355896,
+      "gold_rank": 2,
+      "failure_type": "同意图错条目"
+    },
+    {
+      "query": "期末考几号开始",
+      "gold_intent": "考试与成绩",
+      "gold_question": "期末考试安排在哪里查？",
+      "pred_question": "成绩什么时候出、在哪里查？",
+      "pred_intent": "考试与成绩",
+      "score": 0.9647648334503174,
+      "gold_rank": 4,
+      "failure_type": "同意图错条目"
+    },
+    {
+      "query": "成绩单怎么打印",
+      "gold_intent": "考试与成绩",
+      "gold_question": "成绩什么时候出、在哪里查？",
+      "pred_question": "出国申请需要英文成绩单怎么办理？",
+      "pred_intent": "考试与成绩",
+      "score": 0.9751383066177368,
+      "gold_rank": 2,
+      "failure_type": "同意图错条目"
+    },
+    {
+      "query": "缓考需要什么材料",
+      "gold_intent": "考试与成绩",
+      "gold_question": "生病不能参加考试怎么申请缓考？",
+      "pred_question": "成绩什么时候出、在哪里查？",
+      "pred_intent": "考试与成绩",
+      "score": 0.9615821838378906,
+      "gold_rank": 6,
+      "failure_type": "同意图错条目"
+    },
+    {
+      "query": "平均学分绩点是什么意思",
+      "gold_intent": "考试与成绩",
+      "gold_question": "绩点怎么计算？专业排名在哪里看？",
+      "pred_question": "成绩什么时候出、在哪里查？",
+      "pred_intent": "考试与成绩",
+      "score": 0.8138045072555542,
+      "gold_rank": 2,
+      "failure_type": "同意图错条目"
+    },
+    {
+      "query": "怎么知道自己的排名",
+      "gold_intent": "考试与成绩",
+      "gold_question": "绩点怎么计算？专业排名在哪里看？",
+      "pred_question": "成绩什么时候出、在哪里查？",
+      "pred_intent": "考试与成绩",
+      "score": 0.9248212575912476,
+      "gold_rank": 2,
+      "failure_type": "同意图错条目"
+    },
+    {
+      "query": "在校证明怎么开",
+      "gold_intent": "考试与成绩",
+      "gold_question": "出国申请需要英文成绩单怎么办理？",
+      "pred_question": "毕业后档案和户口怎么处理？",
+      "pred_intent": "毕业与档案",
+      "score": 0.9616197347640991,
+      "gold_rank": 11,
+      "failure_type": "跨意图"
+    },
+    {
+      "query": "书到期了怎么办",
+      "gold_intent": "图书馆",
+      "gold_question": "一本书能借多久？怎么续借？",
+      "pred_question": "书丢了或者逾期了怎么处理？",
+      "pred_intent": "图书馆",
+      "score": 0.9662322998046875,
+      "gold_rank": 2,
+      "failure_type": "同意图错条目"
+    },
+    {
+      "query": "逾期记录怎么消除",
+      "gold_intent": "图书馆",
+      "gold_question": "书丢了或者逾期了怎么处理？",
+      "pred_question": "校外实习期间考勤怎么算？",
+      "pred_intent": "请假与考勤",
+      "score": 0.621066689491272,
+      "gold_rank": 17,
+      "failure_type": "跨意图"
+    },
+    {
+      "query": "VPN怎么连图书馆",
+      "gold_intent": "图书馆",
+      "gold_question": "校外怎么访问知网和数据库？",
+      "pred_question": "新生或校外读者怎么开通借书权限？",
+      "pred_intent": "图书馆",
+      "score": 0.8710915446281433,
+      "gold_rank": 2,
+      "failure_type": "同意图错条目"
+    },
+    {
+      "query": "怎么预约考研自习室",
+      "gold_intent": "图书馆",
+      "gold_question": "图书馆座位怎么预约？",
+      "pred_question": "生病不能参加考试怎么申请缓考？",
+      "pred_intent": "考试与成绩",
+      "score": 0.6915977001190186,
+      "gold_rank": 10,
+      "failure_type": "跨意图"
+    },
+    {
+      "query": "图书馆办证流程",
+      "gold_intent": "图书馆",
+      "gold_question": "新生或校外读者怎么开通借书权限？",
+      "pred_question": "图书馆座位怎么预约？",
+      "pred_intent": "图书馆",
+      "score": 0.8652989268302917,
+      "gold_rank": 4,
+      "failure_type": "同意图错条目"
+    },
+    {
+      "query": "半夜回宿舍怎么进",
+      "gold_intent": "宿舍与住宿",
+      "gold_question": "宿舍门禁是几点？晚归怎么办？",
+      "pred_question": "寒暑假可以留在宿舍吗？",
+      "pred_intent": "宿舍与住宿",
+      "score": 0.9170253276824951,
+      "gold_rank": 2,
+      "failure_type": "同意图错条目"
+    },
+    {
+      "query": "维修电话是多少",
+      "gold_intent": "宿舍与住宿",
+      "gold_question": "宿舍停水停电或设施坏了找谁？",
+      "pred_question": "校园网经常掉线怎么办？",
+      "pred_intent": "校园网络与IT",
+      "score": 0.5023255944252014,
+      "gold_rank": 7,
+      "failure_type": "跨意图"
+    },
+    {
+      "query": "宿舍可以做饭吗",
+      "gold_intent": "宿舍与住宿",
+      "gold_question": "宿舍能用大功率电器吗？",
+      "pred_question": "宿舍门禁是几点？晚归怎么办？",
+      "pred_intent": "宿舍与住宿",
+      "score": 0.8333089351654053,
+      "gold_rank": 2,
+      "failure_type": "同意图错条目"
+    },
+    {
+      "query": "违规电器怎么处理",
+      "gold_intent": "宿舍与住宿",
+      "gold_question": "宿舍能用大功率电器吗？",
+      "pred_question": "宿舍停水停电或设施坏了找谁？",
+      "pred_intent": "宿舍与住宿",
+      "score": 0.8309890031814575,
+      "gold_rank": 2,
+      "failure_type": "同意图错条目"
+    },
+    {
+      "query": "留校需要什么手续",
+      "gold_intent": "宿舍与住宿",
+      "gold_question": "寒暑假可以留在宿舍吗？",
+      "pred_question": "毕业后档案和户口怎么处理？",
+      "pred_intent": "毕业与档案",
+      "score": 0.6676900386810303,
+      "gold_rank": 26,
+      "failure_type": "跨意图"
+    },
+    {
+      "query": "宿舍安全注意事项",
+      "gold_intent": "宿舍与住宿",
+      "gold_question": "家长或同学可以进宿舍吗？",
+      "pred_question": "宿舍门禁是几点？晚归怎么办？",
+      "pred_intent": "宿舍与住宿",
+      "score": 0.9534150958061218,
+      "gold_rank": 2,
+      "failure_type": "同意图错条目"
+    }
+  ]
+}
