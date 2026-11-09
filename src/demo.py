@@ -564,14 +564,14 @@ html, body { background: #f5f7fb !important; }
 
 HERO = """
 <div class="cf-hero">
-  <div class="cf-hero-badge"><i></i>自然语言处理 · 期末项目 · 本地运行</div>
+  <div class="cf-hero-badge"><i></i>大连东软信息学院 · 自然语言处理 · 期末项目</div>
   <h1>校园 FAQ 智能问答</h1>
-  <p>BERT 微调意图识别 + 语义检索，覆盖 10 类校园事务；低置信度时可选用智能补答，核心答案始终来自本地知识库。</p>
+  <p>BERT 微调意图识别 + 语义检索，覆盖大连东软信息学院 10 类校园事务；低置信度时可选用智能补答，核心答案始终来自本地知识库。</p>
   <p class="cf-hero-sub">10 类意图 · 60 条知识库 · 360 条问法 · CPU/GPU 均可运行</p>
   <div class="cf-stats">
-    <div class="cf-stat"><b>87.5%</b><span>意图分类准确率</span></div>
-    <div class="cf-stat"><b>49.2%</b><span>条目 Recall@1</span></div>
-    <div class="cf-stat"><b>77.5%</b><span>条目 Recall@3</span></div>
+    <div class="cf-stat"><b>85.0%</b><span>意图分类准确率</span></div>
+    <div class="cf-stat"><b>50.8%</b><span>条目 Recall@1</span></div>
+    <div class="cf-stat"><b>70.0%</b><span>条目 Recall@3</span></div>
     <div class="cf-stat"><b>45 ms</b><span>单次响应耗时</span></div>
   </div>
 </div>
@@ -579,14 +579,14 @@ HERO = """
 
 METHODS = ["BERT 向量检索", "TF-IDF", "PPMI+SVD", "Skip-gram"]
 EXAMPLES = [
-    "饭卡丢了怎么补办",
-    "图书馆周末开到几点",
-    "宿舍晚上几点关门",
-    "缓考需要什么材料",
-    "校园网一直掉线怎么办",
-    "奖学金申请需要什么条件",
-    "毕业前要修满多少学分",
+    "金智教务系统怎么查成绩",
+    "正式成绩单在哪里打印",
+    "软件园三期宿舍几点锁门",
     "食堂能用微信支付吗",
+    "电费在哪里交",
+    "东软智慧学工怎么请假",
+    "毕业要修多少素质学分",
+    "美团外卖能送到宿舍楼下吗",
 ]
 
 with gr.Blocks(title="校园 FAQ 智能问答", theme=THEME, css=CUSTOM_CSS, fill_width=True) as demo:
@@ -596,7 +596,7 @@ with gr.Blocks(title="校园 FAQ 智能问答", theme=THEME, css=CUSTOM_CSS, fil
         with gr.Column(scale=4, elem_classes=["cf-card", "cf-input-card"]):
             gr.HTML('<div class="cf-field-title">你的问题<span>支持自然语言提问，回车即可检索</span></div>',
                     container=False, padding=False)
-            query = gr.Textbox(show_label=False, placeholder="例如：饭卡丢了怎么补办？",
+            query = gr.Textbox(show_label=False, placeholder="例如：正式成绩单在哪里打印？",
                                lines=3, elem_classes=["cf-input"])
             gr.HTML('<div class="cf-field-title">检索方式</div>', container=False, padding=False)
             method = gr.Radio(METHODS, value="BERT 向量检索", show_label=False,
